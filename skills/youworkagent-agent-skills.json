@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "calculate-freelance-project-quote",
+      "type": "skill-md",
+      "description": "Calculate and explain an INR freelance or small-studio project quote from six bounded assumptions. Use when a user wants a fee estimate, quote range, or pricing rationale for brand, website, product, development, strategy, or consulting work in India.",
+      "url": "/.well-known/agent-skills/calculate-freelance-project-quote/SKILL.md",
+      "digest": "sha256:b1f1d599c77db3274182f422b18c275ffb8318aa3c14be42934b5a95c498b6f3"
+    },
+    {
+      "name": "draft-overdue-invoice-follow-up",
+      "type": "skill-md",
+      "description": "Calculate an overdue INR invoice balance and draft a factual payment follow-up. Use when an Indian freelancer or small studio needs a gentle reminder, firm follow-up, or final payment request without sharing client identity or invoice documents.",
+      "url": "/.well-known/agent-skills/draft-overdue-invoice-follow-up/SKILL.md",
+      "digest": "sha256:c8b2e4958ca5eca5256aa134d8a24212b02f48533661eb27891a562b3bf324c8"
+    }
+  ]
+}

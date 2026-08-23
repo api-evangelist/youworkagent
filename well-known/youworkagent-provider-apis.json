@@ -1,0 +1,129 @@
+{
+  "name": "YouWork Agent API Index",
+  "description": "Public machine-readable API catalog for YouWork Agent products, beginning with Scopewise's deterministic INR freelance project quote API.",
+  "url": "https://scopewise.youworkagent.online/apis.json",
+  "specificationVersion": "0.23",
+  "type": "Index",
+  "kind": "company",
+  "aid": "youworkagent.online:scopewise",
+  "created": "2026-08-23",
+  "modified": "2026-08-23",
+  "image": "https://scopewise.youworkagent.online/scopewise-logo-512.png",
+  "tags": [
+    "Freelance",
+    "Project Pricing",
+    "INR",
+    "Business",
+    "Deterministic API",
+    "Agent API"
+  ],
+  "maintainers": [
+    {
+      "FN": "YouWork Agent",
+      "url": "https://youworkagent.online/"
+    }
+  ],
+  "apis": [
+    {
+      "aid": "youworkagent.online:scopewise-project-quote",
+      "name": "Scopewise Project Quote API",
+      "description": "Calculates an explainable INR freelance project fee and working range from six bounded commercial assumptions without storing those inputs.",
+      "humanURL": "https://scopewise.youworkagent.online/api-docs?source=apis-io",
+      "baseURL": "https://scopewise.youworkagent.online/api/v1",
+      "image": "https://scopewise.youworkagent.online/scopewise-logo-512.png",
+      "tags": [
+        "Freelance",
+        "Project Pricing",
+        "INR",
+        "Business",
+        "No Authentication",
+        "CORS"
+      ],
+      "contact": [
+        {
+          "FN": "YouWork Agent support",
+          "url": "https://scopewise.youworkagent.online/api-docs?source=apis-io"
+        }
+      ],
+      "properties": [
+        {
+          "type": "OpenAPI",
+          "name": "OpenAPI 3.1 definition",
+          "url": "https://scopewise.youworkagent.online/openapi.json"
+        },
+        {
+          "type": "Documentation",
+          "name": "Interactive API documentation",
+          "url": "https://scopewise.youworkagent.online/api-docs?source=apis-io"
+        },
+        {
+          "type": "Pricing",
+          "name": "Free API and optional human review pricing",
+          "url": "https://scopewise.youworkagent.online/api-docs?source=apis-io"
+        },
+        {
+          "type": "RateLimits",
+          "name": "Public usage limit",
+          "description": "Sixty quote calculations per minute per connecting address.",
+          "url": "https://scopewise.youworkagent.online/api-docs?source=apis-io"
+        },
+        {
+          "type": "PrivacyPolicy",
+          "name": "Privacy policy",
+          "url": "https://scopewise.youworkagent.online/privacy"
+        },
+        {
+          "type": "X-AgentCard",
+          "name": "Well-known agent card",
+          "url": "https://scopewise.youworkagent.online/.well-known/agent.json"
+        },
+        {
+          "type": "X-LLMsTxt",
+          "name": "LLM discovery index",
+          "url": "https://scopewise.youworkagent.online/llms.txt"
+        },
+        {
+          "type": "X-APIOnboarding",
+          "name": "API onboarding descriptor",
+          "url": "https://scopewise.youworkagent.online/.well-known/api-onboarding"
+        },
+        {
+          "type": "X-APICatalog",
+          "name": "RFC 9727 API catalog",
+          "url": "https://scopewise.youworkagent.online/.well-known/api-catalog"
+        },
+        {
+          "type": "X-AgentSkills",
+          "name": "Agent Skills discovery index",
+          "url": "https://scopewise.youworkagent.online/.well-known/agent-skills/index.json"
+        }
+      ]
+    },
+    {
+      "aid": "youworkagent.online:scopewise-payment-follow-up",
+      "name": "Scopewise Overdue Invoice Follow-up API",
+      "description": "Calculates an overdue INR invoice balance and drafts a staged factual reminder from five bounded inputs without storing invoice values or client identity.",
+      "humanURL": "https://scopewise.youworkagent.online/api-docs?source=apis-io-payment-follow-up",
+      "baseURL": "https://scopewise.youworkagent.online/api/v1",
+      "image": "https://scopewise.youworkagent.online/scopewise-logo-512.png",
+      "tags": ["Freelance", "Overdue Invoice", "Payment Follow-up", "INR", "No Authentication", "CORS"],
+      "contact": [{ "FN": "YouWork Agent support", "url": "https://scopewise.youworkagent.online/api-docs?source=apis-io-payment-follow-up" }],
+      "properties": [
+        { "type": "OpenAPI", "name": "OpenAPI 3.1 definition", "url": "https://scopewise.youworkagent.online/openapi.json" },
+        { "type": "Documentation", "name": "API documentation", "url": "https://scopewise.youworkagent.online/api-docs?source=apis-io-payment-follow-up" },
+        { "type": "Pricing", "name": "Free API and optional human-service pricing", "url": "https://scopewise.youworkagent.online/api-docs?source=apis-io-payment-follow-up" },
+        { "type": "RateLimits", "name": "Public usage limit", "description": "Sixty calculations per minute per connecting address.", "url": "https://scopewise.youworkagent.online/api-docs?source=apis-io-payment-follow-up" },
+        { "type": "PrivacyPolicy", "name": "Privacy policy", "url": "https://scopewise.youworkagent.online/privacy" },
+        { "type": "X-AgentSkills", "name": "Agent Skills discovery index", "url": "https://scopewise.youworkagent.online/.well-known/agent-skills/index.json" },
+        { "type": "X-APICatalog", "name": "RFC 9727 API catalog", "url": "https://scopewise.youworkagent.online/.well-known/api-catalog" }
+      ]
+    }
+  ],
+  "common": [
+    {
+      "type": "PrivacyPolicy",
+      "name": "Scopewise privacy policy",
+      "url": "https://scopewise.youworkagent.online/privacy"
+    }
+  ]
+}

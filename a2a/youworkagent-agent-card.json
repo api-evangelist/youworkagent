@@ -1,0 +1,9 @@
+{
+  "name": "Scopewise Project Quote API",
+  "description": "Calculate an explainable INR freelance project fee from effort, rate, scope and delivery risk.",
+  "url": "https://scopewise.youworkagent.online/api-docs",
+  "openapi": "https://scopewise.youworkagent.online/openapi.json",
+  "authentication": { "type": "none" },
+  "privacy": "Commercial request inputs are calculated in memory and are not persisted.",
+  "provider": { "name": "YouWork Agent", "url": "https://youworkagent.online" }
+}

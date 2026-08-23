@@ -1,0 +1,116 @@
+aid: youworkagent
+name: YouWork Agent
+description: >-
+  YouWork Agent publishes Scopewise, a deterministic commercial API for Indian freelancers and
+  agencies: a project-quote endpoint that prices a scope of work in INR, and an overdue-invoice
+  follow-up endpoint. The contract is an OpenAPI 3.1 document of two operations and four schemas
+  served from scopewise.youworkagent.online. The provider is unusually agent-native for its size —
+  alongside the specification it serves an A2A agent card, a declared agent-skills index, an RFC
+  9727 api-catalog (as application/linkset+json carrying the RFC profile parameter), a machine-
+  readable API onboarding document, and an llms.txt.
+type: Index
+url: https://raw.githubusercontent.com/api-evangelist/youworkagent/refs/heads/main/apis.yml
+image: https://scopewise.youworkagent.online/scopewise-logo-512.png
+created: '2026-08-23'
+modified: '2026-08-23'
+specificationVersion: '0.23'
+tags:
+- Freelance
+- Project Pricing
+- Invoicing
+- Business
+- Agents
+- Agent Commerce
+- India
+tags_raw:
+- Freelance
+- Project Pricing
+- INR
+- Business
+- Deterministic API
+- Agent API
+apis:
+- aid: youworkagent:scopewise-project-quote-api
+  name: Scopewise Project Quote API
+  description: >-
+    Deterministic INR pricing for a freelance or agency project scope. POST /api/v1/project-quote;
+    validates its input and returns a structured quote.
+  humanURL: https://scopewise.youworkagent.online/api-docs
+  baseURL: https://scopewise.youworkagent.online/api/v1
+  tags:
+  - Freelance
+  - Project Pricing
+  properties:
+  - type: OpenAPI
+    url: openapi/youworkagent-scopewise-api-openapi.yml
+  - type: Documentation
+    url: https://scopewise.youworkagent.online/api-docs
+  - type: AgentCard
+    url: a2a/youworkagent-agent-card.json
+  - type: AgentSkill
+    url: skills/youworkagent-agent-skills.json
+  - type: PrivacyPolicy
+    url: https://scopewise.youworkagent.online/privacy
+- aid: youworkagent:scopewise-overdue-invoice-follow-up-api
+  name: Scopewise Overdue Invoice Follow-up API
+  description: >-
+    Generates follow-up on an overdue invoice. POST /api/v1/overdue-invoice-follow-up. Shares the
+    same OpenAPI document and base URL as the quote API.
+  humanURL: https://scopewise.youworkagent.online/api-docs
+  baseURL: https://scopewise.youworkagent.online/api/v1
+  tags:
+  - Invoicing
+  - Business
+  properties:
+  - type: OpenAPI
+    url: openapi/youworkagent-scopewise-api-openapi.yml
+  - type: Documentation
+    url: https://scopewise.youworkagent.online/api-docs
+  - type: AgentSkill
+    url: skills/youworkagent-agent-skills.json
+common:
+- type: APIsJSON
+  url: well-known/youworkagent-provider-apis.json
+- type: APICatalog
+  url: well-known/youworkagent-api-catalog.json
+- type: Onboarding
+  url: well-known/youworkagent-api-onboarding.json
+- type: AgentCard
+  url: a2a/youworkagent-agent-card.json
+- type: AgentSkill
+  url: skills/youworkagent-agent-skills.json
+- type: LLMsTxt
+  url: llms/youworkagent-llms.txt
+- type: Website
+  url: https://youworkagent.online
+- type: DeveloperPortal
+  url: https://scopewise.youworkagent.online/api-docs
+- type: PrivacyPolicy
+  url: https://scopewise.youworkagent.online/privacy
+maintainers:
+- FN: YouWork Agent
+  email: hello@youworkagent.online
+  url: https://youworkagent.online
+x-provenance:
+  added: '2026-08-23'
+  method: searched
+  source: https://scopewise.youworkagent.online/apis.json
+  note: >-
+    Submitted via apis.io/add on 2026-08-23 from hello@youworkagent.online and rated 71 (exemplar)
+    by the gate. Like Southend earlier the same day, the submitted APIs.json URL is CORRECT — it
+    returns JSON, an invented control path returns a real 404, and every declared property was
+    fetched and confirmed before being written here.
+    SLUGGED FROM THE COMPANY, NOT THE PRODUCT. The submission names "Scopewise Project Quote API"
+    and is served from the subdomain scopewise.youworkagent.online, but the provider is YouWork
+    Agent on youworkagent.online, and the provider's OWN apis.json already models it that way:
+    its aid is "youworkagent.online:scopewise", kind company, maintainer YouWork Agent. So this
+    record is the company and Scopewise is two APIs inside it. That is also what a domain-derived
+    slug would produce — see roadmap#93.
+    The agent surface is real and was verified rather than taken on trust: an A2A agent card, an
+    agent-skills index, a machine-readable api-onboarding document, and an RFC 9727 api-catalog
+    served as application/linkset+json carrying profile="https://www.rfc-editor.org/info/rfc9727" —
+    the most precise media type seen in this sweep. The API is live and unauthenticated: an empty
+    POST to /api/v1/project-quote returns 400 JSON, which is correct validation rather than a stub.
+    Both declared APIs share ONE OpenAPI document of two paths. They are recorded as two apis[]
+    entries because the provider declares them separately, but the contract behind them is the same
+    file.

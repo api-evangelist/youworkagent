@@ -1,0 +1,93 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://scopewise.youworkagent.online/api/v1",
+      "title": "Scopewise Project Quote API",
+      "service-desc": [
+        {
+          "href": "https://scopewise.youworkagent.online/openapi.json",
+          "type": "application/json",
+          "title": "OpenAPI 3.1 contract"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://scopewise.youworkagent.online/api-docs?source=api-catalog",
+          "type": "text/html",
+          "title": "Documentation and live playground"
+        }
+      ],
+      "service-meta": [
+        {
+          "href": "https://scopewise.youworkagent.online/apis.json",
+          "type": "application/json",
+          "title": "APIs.json 0.23 index"
+        },
+        {
+          "href": "https://scopewise.youworkagent.online/.well-known/api-onboarding",
+          "type": "application/json",
+          "title": "API onboarding descriptor"
+        },
+        {
+          "href": "https://scopewise.youworkagent.online/.well-known/agent.json",
+          "type": "application/json",
+          "title": "Agent card"
+        },
+        {
+          "href": "https://scopewise.youworkagent.online/llms.txt",
+          "type": "text/plain",
+          "title": "LLM discovery index"
+        },
+        {
+          "href": "https://scopewise.youworkagent.online/.well-known/agent-skills/index.json",
+          "type": "application/json",
+          "title": "Agent Skills discovery index"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://scopewise.youworkagent.online/health",
+          "type": "application/json",
+          "title": "Service health"
+        }
+      ]
+    },
+    {
+      "anchor": "https://scopewise.youworkagent.online/api/v1/overdue-invoice-follow-up",
+      "title": "Scopewise Overdue Invoice Follow-up API",
+      "service-desc": [
+        {
+          "href": "https://scopewise.youworkagent.online/openapi.json",
+          "type": "application/json",
+          "title": "OpenAPI 3.1 contract"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://scopewise.youworkagent.online/skills/?source=api-catalog-payment-follow-up",
+          "type": "text/html",
+          "title": "Agent skill and usage boundaries"
+        }
+      ],
+      "service-meta": [
+        {
+          "href": "https://scopewise.youworkagent.online/.well-known/agent-skills/index.json",
+          "type": "application/json",
+          "title": "Agent Skills discovery index"
+        },
+        {
+          "href": "https://scopewise.youworkagent.online/llms.txt",
+          "type": "text/plain",
+          "title": "LLM discovery index"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://scopewise.youworkagent.online/health",
+          "type": "application/json",
+          "title": "Service health"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+# Scopewise
+
+> Free, privacy-conscious commercial tools and fixed-scope human reviews for freelancers and small studios in India.
+
+Canonical site: https://scopewise.youworkagent.online/
+Owner brand: YouWork Agent
+Language: English
+Currency: INR
+Atom feed: https://scopewise.youworkagent.online/feed.xml
+Sitemap: https://scopewise.youworkagent.online/sitemap.xml
+
+Scopewise helps independent professionals price projects, define scope, prepare proposals and statements of work, control revisions, invoice clients, and follow up on overdue payments. The core calculators and generators work without an account. Human help is optional and fit is confirmed by email before payment.
+
+## Start here
+
+- [Project pricing calculator](https://scopewise.youworkagent.online/): Estimate a project fee from effort, rate, revisions, urgency, and scope clarity.
+- [Project Quote API](https://scopewise.youworkagent.online/api-docs): Agent-ready deterministic INR quote calculation with an OpenAPI 3.1 contract and no authentication.
+- [APIs.json discovery document](https://scopewise.youworkagent.online/apis.json): Standards-based API index linking the contract, documentation, pricing, limits, privacy policy and agent surfaces.
+- [API onboarding descriptor](https://scopewise.youworkagent.online/.well-known/api-onboarding): Machine-readable no-account access, authentication, free-plan, rate-limit and example-call instructions.
+- [API catalog](https://scopewise.youworkagent.online/.well-known/api-catalog): RFC 9727 linkset connecting the API contract, documentation, onboarding, agent metadata, health and LLM discovery surfaces.
+- [Agent Skills index](https://scopewise.youworkagent.online/.well-known/agent-skills/index.json): Discover and integrity-check the focused project-quote skill.
+- [Project quote agent skill](https://scopewise.youworkagent.online/.well-known/agent-skills/calculate-freelance-project-quote/SKILL.md): Instructions for safely collecting six bounded assumptions, calling the API and explaining the result.
+- [Overdue invoice follow-up agent skill](https://scopewise.youworkagent.online/.well-known/agent-skills/draft-overdue-invoice-follow-up/SKILL.md): Calculate an outstanding INR balance and draft a staged reminder without sending client identity or invoice documents.
+- [OARS manifest](https://scopewise.youworkagent.online/.well-known/oars.json): Machine-readable product identity, audience, engagement, agent instructions, callable contract and readiness declaration.
+- [All fixed-scope human services](https://scopewise.youworkagent.online/freelance-commercial-review-services-india): Compare seven commercial reviews and document services from INR 999 to INR 2,999.
+- [Briefcheck](https://briefcheck.youworkagent.online/): Score a client brief and identify missing information before quoting.
+
+## Free private tools
+
+- [Proposal generator](https://scopewise.youworkagent.online/freelance-proposal-generator-india): Build a bounded freelance proposal in the browser.
+- [Statement of Work generator](https://scopewise.youworkagent.online/freelance-statement-of-work-generator-india): Create a commercial SOW with deliverables, dependencies, acceptance, and change control.
+- [Proposal checker](https://scopewise.youworkagent.online/freelance-proposal-checker): Find commercial gaps in proposal text; entered text stays in the browser.
+- [Freelance invoice generator](https://scopewise.youworkagent.online/freelance-invoice-template-india): Create and save a GST-aware freelance invoice.
+- [Freelance quotation generator](https://scopewise.youworkagent.online/freelance-quotation-generator-india): Build an itemised, validity-dated client quotation with payment, revision, and exclusion terms.
+- [Quotation follow-up email generator](https://scopewise.youworkagent.online/freelance-quotation-follow-up-email-generator-india): Generate a first receipt check, decision follow-up, or final close-the-loop email without uploading client details.
+- [Freelance quotation terms generator](https://scopewise.youworkagent.online/freelance-quotation-terms-and-conditions-india): Generate validity, payment, revision, dependency, exclusion, cancellation, and acceptance wording in the browser.
+- [Freelance quotation format sample](https://scopewise.youworkagent.online/freelance-quotation-format-sample-india): Study a fictional INR 94,400 website quotation with each commercial boundary explained.
+- [Freelance quotation template for Word and Excel](https://scopewise.youworkagent.online/freelance-quotation-template-word-excel-india): Download editable RTF and CSV files with itemised scope and commercial terms.
+- [Quotation vs proforma invoice vs tax invoice](https://scopewise.youworkagent.online/quotation-vs-proforma-invoice-india): Choose the commercial document for the current stage and verify the applicable tax step.
+- [Payment reminder generator](https://scopewise.youworkagent.online/freelance-payment-reminder-message-generator-india): Draft email or WhatsApp payment reminders.
+- [WhatsApp payment reminder generator](https://scopewise.youworkagent.online/payment-reminder-whatsapp-message): Generate an English or Hinglish overdue-invoice message privately, then copy it or open WhatsApp.
+- [Invoice follow-up tracker and schedule generator](https://scopewise.youworkagent.online/freelance-invoice-follow-up-schedule-generator-india): Plan four staged reminders, download private calendar events, and save a reusable CSV tracker without uploading client details.
+- [Invoice follow-up tracker Excel template](https://scopewise.youworkagent.online/freelance-invoice-follow-up-tracker-excel-template-india): Download a formula-backed XLSX with 100 tracker rows, automatic aging buckets, weighted overdue days, follow-ups due, dropdowns, examples and guidance; CSV fallback included.
+- [Accounts receivable aging calculator](https://scopewise.youworkagent.online/freelance-accounts-receivable-aging-calculator-india): Privately bucket up to 20 open invoices, calculate weighted overdue age, rank follow-up priority and download a CSV report.
+- [Accounts receivable aging report example](https://scopewise.youworkagent.online/accounts-receivable-aging-report-example-india): Study a fictional INR aging report, weighted overdue calculation, missing-due-date reconciliation and next-action interpretation.
+- [Invoice payment terms generator](https://scopewise.youworkagent.online/invoice-payment-terms-and-conditions-india): Build clear payment clauses for invoices.
+- [Day-rate calculator](https://scopewise.youworkagent.online/freelance-day-rate-calculator-india): Calculate a sustainable freelance day rate.
+- [Retainer calculator](https://scopewise.youworkagent.online/freelance-retainer-calculator): Price reserved monthly capacity.
+- [Scope-creep calculator](https://scopewise.youworkagent.online/scope-creep-calculator): Price work added beyond the agreed scope.
+- [Revision-cost calculator](https://scopewise.youworkagent.online/freelance-revision-cost-calculator-india): Calculate the fee and schedule impact of revision rounds beyond the allowance.
+- [Overdue-invoice calculator](https://scopewise.youworkagent.online/freelance-overdue-invoice-calculator-india): Organize an overdue balance and choose the next follow-up step.
+
+## Templates and practical guides
+
+- [Freelance project proposal template](https://scopewise.youworkagent.online/freelance-project-proposal-template-india)
+- [Freelance change-order template](https://scopewise.youworkagent.online/freelance-change-order-template)
+- [Freelance retainer proposal template](https://scopewise.youworkagent.online/freelance-retainer-proposal-template)
+- [GST invoice format for India](https://scopewise.youworkagent.online/gst-invoice-format-india)
+- [Proposal vs Statement of Work](https://scopewise.youworkagent.online/proposal-vs-statement-of-work-freelancer-india)
+- [How to charge for scope creep](https://scopewise.youworkagent.online/how-to-charge-for-scope-creep)
+- [How to follow up on an unpaid freelance invoice](https://scopewise.youworkagent.online/how-to-follow-up-on-an-unpaid-freelance-invoice)
+- [How to price a freelance retainer](https://scopewise.youworkagent.online/how-to-price-a-freelance-retainer)
+
+## Fixed-scope human services
+
+- [Quote review — INR 999](https://scopewise.youworkagent.online/freelance-quote-review-india): Priority scope risks, wording changes, fee assumptions, and unresolved client questions for one quote.
+- [SOW scope review — INR 999](https://scopewise.youworkagent.online/freelance-statement-of-work-review-india): Commercial review of deliverables, responsibilities, dependencies, acceptance, and change control for one SOW.
+- [Change-order review — INR 999](https://scopewise.youworkagent.online/freelance-change-order-review-india): Review added work, the fee or scope trade, timeline impact, and approval wording.
+- [Payment-demand review — INR 999](https://scopewise.youworkagent.online/freelance-overdue-invoice-calculator-india#payment-review): Review one overdue-invoice timeline and one draft for factual clarity and a clear next action.
+- [Overdue follow-up pack — INR 1,499](https://scopewise.youworkagent.online/freelance-overdue-invoice-follow-up-pack-india): Reconciled timeline, three staged emails, a WhatsApp follow-up, and an escalation checklist for one invoice.
+- [Proposal rewrite — INR 1,999](https://scopewise.youworkagent.online/freelance-proposal-writing-service-india): One editable client-ready proposal with scope, exclusions, fee, payment, revisions, and decision questions.
+- [Proposal + SOW pack — INR 2,999](https://scopewise.youworkagent.online/freelance-proposal-sow-review-pack-india): Proposal rewrite, SOW commercial review, consistency matrix, and unresolved decision questions for one project.
+
+## Boundaries and contact
+
+Scopewise provides commercial clarity, not legal, tax, financial, or debt-collection advice. Do not send passwords, bank details, identity documents, or unrelated personal information. Contact: hello@youworkagent.online

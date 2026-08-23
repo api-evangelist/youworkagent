@@ -1,0 +1,89 @@
+{
+  "aod": "0.1",
+  "provider": {
+    "name": "YouWork Agent",
+    "url": "https://youworkagent.online/",
+    "portalUrl": "https://scopewise.youworkagent.online/api-docs?source=api-onboarding"
+  },
+  "maturity": "self-serve",
+  "account": {
+    "required": false,
+    "agentPolicy": "allowed",
+    "prerequisites": [],
+    "plans": [
+      {
+        "name": "Free",
+        "requiredFor": "Unauthenticated project quote calculations, currently limited to 60 requests per minute per connecting address.",
+        "url": "https://scopewise.youworkagent.online/api-docs?source=api-onboarding"
+      }
+    ]
+  },
+  "verification": [],
+  "registration": {
+    "applicationNoun": "API access",
+    "owner": "user",
+    "mechanisms": [
+      {
+        "type": "open",
+        "description": "Call the deterministic project quote endpoint without an account, API key, payment method or approval step.",
+        "baseUrl": "https://scopewise.youworkagent.online/api/v1",
+        "docsUrls": [
+          "https://scopewise.youworkagent.online/api-docs?source=api-onboarding",
+          "https://scopewise.youworkagent.online/openapi.json"
+        ],
+        "auth": "none"
+      }
+    ]
+  },
+  "authentication": {
+    "methods": [
+      {
+        "id": "none",
+        "type": "none",
+        "bootstrap": ""
+      }
+    ]
+  },
+  "credentials": [],
+  "scopes": {
+    "model": "none",
+    "notes": "The public quote calculation endpoint has no authentication scopes."
+  },
+  "flow": {
+    "args": [],
+    "steps": [
+      {
+        "id": "calculate-example-quote",
+        "description": "Calculate the documented reproducible website-project example.",
+        "auth": "none",
+        "request": {
+          "method": "POST",
+          "url": "https://scopewise.youworkagent.online/api/v1/project-quote",
+          "headers": {
+            "content-type": "application/json"
+          },
+          "body": {
+            "workingDays": 12,
+            "dayRateInr": 5000,
+            "projectType": "website_design",
+            "revisionRounds": "2",
+            "timeline": "comfortable",
+            "scopeClarity": "some_unknowns"
+          }
+        }
+      }
+    ],
+    "outputs": {
+      "suggestedFeeInr": "{steps.calculate-example-quote.suggestedFeeInr}",
+      "workingRangeInr": "{steps.calculate-example-quote.workingRangeInr}"
+    }
+  },
+  "economics": {
+    "freeTier": "All Project Quote API calculations are free; current public limit is 60 requests per minute per connecting address.",
+    "pricingUrl": "https://scopewise.youworkagent.online/api-docs?source=api-onboarding"
+  },
+  "gaps": [
+    "No uptime SLA is offered for the free public endpoint.",
+    "The optional INR 999 human quote review is a separate email-confirmed service, not an API access requirement."
+  ]
+}
