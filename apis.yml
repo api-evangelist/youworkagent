@@ -30,44 +30,39 @@ tags_raw:
 - Deterministic API
 - Agent API
 apis:
-- aid: youworkagent:scopewise-project-quote-api
-  name: Scopewise Project Quote API
+- aid: youworkagent:youworkagent-overdue-invoice-follow-up-api
+  name: YouWork Agent Overdue Invoice Follow Up API
   description: >-
-    Deterministic INR pricing for a freelance or agency project scope. POST /api/v1/project-quote;
-    validates its input and returns a structured quote.
+    The Overdue Invoice Follow Up API from YouWork Agent — 1 operation(s) for overdue invoice follow up.
   humanURL: https://scopewise.youworkagent.online/api-docs
   baseURL: https://scopewise.youworkagent.online/api/v1
   tags:
-  - Freelance
-  - Project Pricing
+  - Overdue Invoice Follow Up
   properties:
   - type: OpenAPI
-    url: openapi/youworkagent-scopewise-api-openapi.yml
+    url: openapi/youworkagent-overdue-invoice-follow-up-api-openapi.yml
   - type: Documentation
     url: https://scopewise.youworkagent.online/api-docs
   - type: AgentCard
     url: a2a/youworkagent-agent-card.json
-  - type: AgentSkill
-    url: skills/youworkagent-agent-skills.json
   - type: PrivacyPolicy
     url: https://scopewise.youworkagent.online/privacy
-- aid: youworkagent:scopewise-overdue-invoice-follow-up-api
-  name: Scopewise Overdue Invoice Follow-up API
-  description: >-
-    Generates follow-up on an overdue invoice. POST /api/v1/overdue-invoice-follow-up. Shares the
-    same OpenAPI document and base URL as the quote API.
+- aid: youworkagent:youworkagent-project-quote-api
+  name: YouWork Agent Project Quote API
+  description: The Project Quote API from YouWork Agent — 1 operation(s) for project quote.
   humanURL: https://scopewise.youworkagent.online/api-docs
   baseURL: https://scopewise.youworkagent.online/api/v1
   tags:
-  - Invoicing
-  - Business
+  - Project Quote
   properties:
   - type: OpenAPI
-    url: openapi/youworkagent-scopewise-api-openapi.yml
+    url: openapi/youworkagent-project-quote-api-openapi.yml
   - type: Documentation
     url: https://scopewise.youworkagent.online/api-docs
-  - type: AgentSkill
-    url: skills/youworkagent-agent-skills.json
+  - type: AgentCard
+    url: a2a/youworkagent-agent-card.json
+  - type: PrivacyPolicy
+    url: https://scopewise.youworkagent.online/privacy
 common:
 - type: APIsJSON
   url: well-known/youworkagent-provider-apis.json
