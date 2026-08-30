@@ -1,0 +1,124 @@
+openapi: 3.2.0
+info:
+  title: Scopewise Freelance Commercial Project Quote API
+  version: 1.1.0
+  description: Deterministic INR project-fee and overdue-invoice follow-up calculations for freelancers and small studios. No account or API key. Commercial request inputs are not persisted.
+servers:
+- url: https://scopewise.youworkagent.online
+security: []
+tags:
+- name: Project Quote
+paths:
+  /api/v1/project-quote:
+    post:
+      security: []
+      operationId: calculateProjectQuote
+      summary: Calculate an explainable freelance project fee
+      description: Combines working days, day rate, project complexity, included revisions, timeline and scope clarity. Returns a planning estimate, disclosed factors and optional next actions.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ProjectQuoteRequest'
+            example:
+              workingDays: 12
+              dayRateInr: 5000
+              projectType: website_design
+              revisionRounds: '2'
+              timeline: comfortable
+              scopeClarity: some_unknowns
+      responses:
+        '200':
+          description: Calculated quote
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProjectQuoteResponse'
+        '400':
+          description: Invalid input
+        '429':
+          description: Rate limit exceeded
+      tags:
+      - Project Quote
+components:
+  schemas:
+    ProjectQuoteResponse:
+      type: object
+      required:
+      - currency
+      - suggestedFeeInr
+      - workingRangeInr
+      - calculation
+      - assumptions
+      - nextActions
+      - privacy
+      - disclaimer
+      properties:
+        currency:
+          const: INR
+        suggestedFeeInr:
+          type: integer
+        workingRangeInr:
+          type: object
+          properties:
+            low:
+              type: integer
+            high:
+              type: integer
+        calculation:
+          type: object
+        assumptions:
+          $ref: '#/components/schemas/ProjectQuoteRequest'
+        nextActions:
+          type: object
+        privacy:
+          type: string
+        disclaimer:
+          type: string
+    ProjectQuoteRequest:
+      type: object
+      additionalProperties: false
+      required:
+      - workingDays
+      - dayRateInr
+      - projectType
+      - revisionRounds
+      - timeline
+      - scopeClarity
+      properties:
+        workingDays:
+          type: integer
+          minimum: 2
+          maximum: 60
+        dayRateInr:
+          type: integer
+          minimum: 1500
+          maximum: 30000
+        projectType:
+          type: string
+          enum:
+          - brand_identity
+          - website_design
+          - design_and_development
+          - product_or_app
+          - strategy_or_consulting
+        revisionRounds:
+          type: string
+          enum:
+          - '1'
+          - '2'
+          - '3'
+          - open_ended
+        timeline:
+          type: string
+          enum:
+          - comfortable
+          - tight
+          - rush
+        scopeClarity:
+          type: string
+          enum:
+          - clear_brief
+          - some_unknowns
+          - discovery_needed

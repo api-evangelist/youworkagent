@@ -1,0 +1,118 @@
+openapi: 3.2.0
+info:
+  title: Scopewise Freelance Commercial Overdue Invoice Follow Up API
+  version: 1.1.0
+  description: Deterministic INR project-fee and overdue-invoice follow-up calculations for freelancers and small studios. No account or API key. Commercial request inputs are not persisted.
+servers:
+- url: https://scopewise.youworkagent.online
+security: []
+tags:
+- name: Overdue Invoice Follow Up
+paths:
+  /api/v1/overdue-invoice-follow-up:
+    post:
+      security: []
+      operationId: draftOverdueInvoiceFollowUp
+      summary: Calculate an overdue invoice balance and draft a payment follow-up
+      description: Calculates outstanding principal and optional illustrative simple interest, then returns a staged reminder with private placeholders. This is arithmetic and commercial communication, not legal or debt-collection advice.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OverdueInvoiceFollowUpRequest'
+            example:
+              invoiceAmountInr: 60000
+              amountPaidInr: 10000
+              daysOverdue: 30
+              annualInterestRatePercent: 0
+              reminderStage: firm
+      responses:
+        '200':
+          description: Calculated balance and reminder
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OverdueInvoiceFollowUpResponse'
+        '400':
+          description: Invalid input
+        '429':
+          description: Rate limit exceeded
+      tags:
+      - Overdue Invoice Follow Up
+components:
+  schemas:
+    OverdueInvoiceFollowUpResponse:
+      type: object
+      required:
+      - currency
+      - outstandingPrincipalInr
+      - illustrativeInterestInr
+      - totalShownInr
+      - daysOverdue
+      - reminderStage
+      - reminder
+      - nextActions
+      - privacy
+      - disclaimer
+      properties:
+        currency:
+          const: INR
+        outstandingPrincipalInr:
+          type: integer
+        illustrativeInterestInr:
+          type: integer
+        totalShownInr:
+          type: integer
+        daysOverdue:
+          type: integer
+        reminderStage:
+          type: string
+        reminder:
+          type: object
+          required:
+          - subject
+          - body
+          properties:
+            subject:
+              type: string
+            body:
+              type: string
+        nextActions:
+          type: object
+        privacy:
+          type: string
+        disclaimer:
+          type: string
+    OverdueInvoiceFollowUpRequest:
+      type: object
+      additionalProperties: false
+      required:
+      - invoiceAmountInr
+      - amountPaidInr
+      - daysOverdue
+      - annualInterestRatePercent
+      - reminderStage
+      properties:
+        invoiceAmountInr:
+          type: integer
+          minimum: 1
+          maximum: 10000000
+        amountPaidInr:
+          type: integer
+          minimum: 0
+          maximum: 10000000
+        daysOverdue:
+          type: integer
+          minimum: 0
+          maximum: 3650
+        annualInterestRatePercent:
+          type: number
+          minimum: 0
+          maximum: 36
+        reminderStage:
+          type: string
+          enum:
+          - gentle
+          - firm
+          - final
