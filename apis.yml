@@ -28,11 +28,10 @@ specificationVersion: '0.23'
 tags:
 - Freelance
 - Project Pricing
-- Invoicing
+- INR
 - Business
-- Agents
-- Agent Commerce
-- India
+- Deterministic API
+- Agent API
 tags_raw:
 - Freelance
 - Project Pricing
