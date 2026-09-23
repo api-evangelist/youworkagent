@@ -43,39 +43,6 @@ paths:
       - Project Quote
 components:
   schemas:
-    ProjectQuoteResponse:
-      type: object
-      required:
-      - currency
-      - suggestedFeeInr
-      - workingRangeInr
-      - calculation
-      - assumptions
-      - nextActions
-      - privacy
-      - disclaimer
-      properties:
-        currency:
-          const: INR
-        suggestedFeeInr:
-          type: integer
-        workingRangeInr:
-          type: object
-          properties:
-            low:
-              type: integer
-            high:
-              type: integer
-        calculation:
-          type: object
-        assumptions:
-          $ref: '#/components/schemas/ProjectQuoteRequest'
-        nextActions:
-          type: object
-        privacy:
-          type: string
-        disclaimer:
-          type: string
     ProjectQuoteRequest:
       type: object
       additionalProperties: false
@@ -122,3 +89,36 @@ components:
           - clear_brief
           - some_unknowns
           - discovery_needed
+    ProjectQuoteResponse:
+      type: object
+      required:
+      - currency
+      - suggestedFeeInr
+      - workingRangeInr
+      - calculation
+      - assumptions
+      - nextActions
+      - privacy
+      - disclaimer
+      properties:
+        currency:
+          const: INR
+        suggestedFeeInr:
+          type: integer
+        workingRangeInr:
+          type: object
+          properties:
+            low:
+              type: integer
+            high:
+              type: integer
+        calculation:
+          type: object
+        assumptions:
+          $ref: '#/components/schemas/ProjectQuoteRequest'
+        nextActions:
+          type: object
+        privacy:
+          type: string
+        disclaimer:
+          type: string

@@ -1,0 +1,28 @@
+{
+  "provider": "youworkagent",
+  "sources": [
+    "_original/youworkagent-openapi.json"
+  ],
+  "outputs": [
+    "youworkagent-overdue-invoice-follow-up-api-openapi.yml",
+    "youworkagent-project-quote-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "1 archived document(s) dropped as subsets of other archived documents",
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "youworkagent-openapi.json: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "youworkagent-openapi.json: tagged paths POST /api/v1/project-quote -> Project Quote",
+    "youworkagent-openapi.json: tagged paths POST /api/v1/overdue-invoice-follow-up -> Overdue Invoice Follow Up",
+    "youworkagent-openapi.json: declared missing tag: Overdue Invoice Follow Up",
+    "youworkagent-openapi.json: declared missing tag: Project Quote",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "_original/youworkagent-scopewise-api-openapi.yml: archived document superseded by a larger archived document",
+    "youworkagent-overdue-invoice-follow-up-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "youworkagent-project-quote-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
+}
