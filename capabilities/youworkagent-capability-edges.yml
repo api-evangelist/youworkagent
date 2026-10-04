@@ -1,0 +1,36 @@
+slug: youworkagent
+provider: YouWork Agent
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 2
+edges:
+- tag: Overdue Invoice Follow Up
+  spec_file: youworkagent-overdue-invoice-follow-up-api-openapi.yml
+  capability_id: BC-200.30
+  capability_id_l1: BC-200
+  capability_name: Accounts Receivable Management
+  confidence: 0.82
+  evidence: POST /api/v1/overdue-invoice-follow-up  draftOverdueInvoiceFollowUp  Calculate an overdue
+    invoice balance and draft a payment follow-up
+  reason: Computing an overdue invoice balance and drafting a payment chaser is receivables collections
+    work, squarely Accounts Receivable Management (customer invoicing and collections).
+- tag: Project Quote
+  spec_file: youworkagent-project-quote-api-openapi.yml
+  capability_id: BC-410.40
+  capability_id_l1: BC-410
+  capability_name: Quote & Configuration Management
+  confidence: 0.7
+  evidence: POST /api/v1/project-quote  calculateProjectQuote  Calculate an explainable freelance project
+    fee
+  reason: Prices a scope of work into a quoted project fee — quote generation/pricing for a prospective
+    engagement, i.e. Quote & Configuration Management. Some ambiguity with Pricing Strategy, but the output
+    is a per-deal quote.

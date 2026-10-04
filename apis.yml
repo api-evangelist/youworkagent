@@ -74,6 +74,9 @@ apis:
   - type: PrivacyPolicy
     url: https://scopewise.youworkagent.online/privacy
 common:
+- type: CapabilityMap
+  url: capabilities/youworkagent-capability-edges.yml
+  name: YouWork Agent Business Capability Map
 - type: APIsJSON
   url: well-known/youworkagent-provider-apis.json
 - type: APICatalog
