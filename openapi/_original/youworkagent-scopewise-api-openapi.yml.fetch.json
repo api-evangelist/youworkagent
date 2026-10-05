@@ -1,0 +1,12 @@
+{
+ "url": "https://scopewise.youworkagent.online/openapi.json",
+ "requested_url": "https://scopewise.youworkagent.online/openapi.json",
+ "status": 200,
+ "content_type": "application/json; charset=utf-8",
+ "bytes": 5976,
+ "sha256": "46d4192435015e197cecb3bb355d4a2e93a752c77729891ef22b79a116cd5290",
+ "fetched_at": "2026-10-04",
+ "fetched_by": "APIEvangelist-Harvest/1.0 (+https://apievangelist.com)",
+ "match": "equivalent",
+ "note": "Re-fetched from the provider by verify-openapi-sources.py; the provider's current document describes the same operations (Jaccard 1.0), but the bytes differ, so the archive is an earlier or reformatted copy."
+}
