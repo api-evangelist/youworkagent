@@ -23,7 +23,7 @@ deliveryModel:
   method: derived
 image: https://scopewise.youworkagent.online/scopewise-logo-512.png
 created: '2026-08-23'
-modified: '2026-08-23'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 tags:
 - Freelance
@@ -74,6 +74,8 @@ apis:
   - type: PrivacyPolicy
     url: https://scopewise.youworkagent.online/privacy
 common:
+- url: https://youworkagent.online/blog
+  type: Blog
 - type: CapabilityMap
   url: capabilities/youworkagent-capability-edges.yml
   name: YouWork Agent Business Capability Map
