@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "youworkagent",
+    "captured_at": "2026-10-11T194000",
+    "source_url": "https://youworkagent.online",
+    "source_type": "root-domain",
+    "file": "youworkagent-2026-10-11T194000.png",
+    "bytes": 118049,
+    "capture": "playwright-local"
+  }
+]
